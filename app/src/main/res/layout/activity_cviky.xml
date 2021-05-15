@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CvikyActivity">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/nadpis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cviky"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txtNalavo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Cvik"
+        android:layout_below="@+id/nadpis"
+        />
+
+    <TextView
+        android:layout_marginRight="20dp"
+        android:id="@+id/txtNapravo"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategoria"
+        android:layout_below="@+id/nadpis"
+        android:layout_alignParentRight="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNalavo"/>
+</RelativeLayout>
